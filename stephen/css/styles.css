@@ -1,16 +1,54 @@
+/* Don't touch this code: */
 *, *:before, *:after {
   box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+/* Your code starts here */
 
-.my-header {
-  color: blue;
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.header {
+  background-color: rgb(90, 125, 230);
+  color: rgb(255, 255, 255);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.art {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer {
+  margin-top: 30px;
 }
