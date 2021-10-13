@@ -1,16 +1,76 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body {
   font-size: 16px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: black;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 7px;
 }
 
-.my-header {
-  color: blue;
+a {
+  font-size: 10px;
+  color: white;
+  margin: 5px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+a:hover {
+  transition: 0.3s;
+  color: gray
+}
+
+h1 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 0.8;
+  transition: 0.5s;
+  transform-origin: 0% 50%;
+}
+
+h1:hover {
+  transform: scale(110%);
+}
+
+.name {
+  color: coral
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section {
+  width: 50%;
+  text-align: center;
+}
+
+.headshot {
+  border-width: 10px;
+  border-color: black;
+  padding: 10px;
 }
