@@ -102,7 +102,7 @@ img {
   padding: 10px;
 }
 
-commission-title {
+.commission-title {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
@@ -112,4 +112,11 @@ commission-title {
   text-align: center;
   padding: 30px;
   text-transform: capitalize;
+}
+
+.input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
