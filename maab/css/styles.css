@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
+
+
 body {
-  font-size: 16px;
+  font-size: 30px;
+  background-color: rosybrown;
 }
 
 img {
@@ -27,14 +30,9 @@ img {
 }
 
 .artist-name {
-  color: blue;
+  color: white;
   font-size: 50px;
 }
-
-.more-about-me {
-  font-size: 20px;
-}
-
 
 .box {
   display: flex;
@@ -43,5 +41,6 @@ img {
 }
 
 .more-about-me {
-  font-size: 10px;
+  font-size: 30px;
+  color: white;
 }
