@@ -32,7 +32,7 @@ main {
 p {
   font-size: 26px;
   font-family: Georama;
-  text-align: center;
+  padding: 25px
 }
 
 img {
@@ -41,7 +41,7 @@ img {
   border-width: 12px;
   border-color: brown;
   border-style: solid;
-  border-radius: 5%
+  padding: 25px
 }
 
 .item {
@@ -51,22 +51,12 @@ img {
   border-style: solid;
   border-color: brown;
   border-radius: 70px;
-  padding: 4%;
   display: flex;
   justify-content: space-around;
-  gap: 40px;
   align-items: center;
 }
 
-.item+.item {
-  margin-top: 30px;
-}
-
-.item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-/* .item {
+.itemtwo {
   margin-left: 3%;
   margin-right: 3%;
   border-width: 20px;
@@ -78,7 +68,7 @@ img {
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: center;
-} */
+}
 
 footer {
   text-align: center;
