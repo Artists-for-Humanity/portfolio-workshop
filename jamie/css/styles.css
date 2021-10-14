@@ -64,6 +64,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: auto;
 }
 
 .section {
@@ -131,10 +132,9 @@ h2 {
   border-radius: 25px;
   align-self: center;
   margin: auto;
-  width: 80%;
+  width: 85%;
   transition: 0.5s;
-  transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
+  transform-origin: 50% 50%;
 }
 
 h2:hover {
