@@ -98,6 +98,49 @@ a {
   flex-direction: column;
 }
 
+/* HALLOWEEN FEATURE */
+.pumpkin {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+
+.halloween-feature {
+  text-align: center;
+}
+
+.halloween-parent {
+  background: linear-gradient(-45deg, #E26812, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.trick-or-treat {
+  font-size: 100px;
+}
+
+.back-to-homepage a {
+  font-size: 10px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ENDS HERE */
+
 /* MANUEL D. KIRTS */
 
 .homepage-link-row a {
@@ -105,7 +148,7 @@ a {
 }
 
 .paintings-parent {
-  margin: 20px;
+  margin: 30px;
   display: flex;
   flex-direction: row;
   overflow: auto;
@@ -118,10 +161,17 @@ a {
   border: black 5px solid;
   margin-right: 20px;
   margin-left: 20px;
+  width: 400px;
+  flex-shrink: 0;
 }
 
-.painting-cards img {
+.paintings img {
   border-radius: 5px 5px 0 0;
+}
+
+.paintings {
+  height: 300px;
+  overflow: hidden;
 }
 
 .card-text {
