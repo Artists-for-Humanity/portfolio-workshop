@@ -4,9 +4,37 @@
   box-sizing: border-box;
 }
 
+.content {
+  display: grid;
+  place-items: center;
+}
+
+header {
+  text-align: center;
+  font-family: monospace;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 100%;
+}
+
+nav a {
+  color: rgb(51, 105, 58);
+  font-size: 30px;
+  padding: 10px;
+}
+
 body {
   font-size: 30px;
-  background-color: rosybrown;
+  background-color: rgb(127, 206, 166);
+  font-family: Times;
 }
 
 img {
@@ -19,6 +47,8 @@ img {
   width: 500%;
   height: 400px;
   overflow: hidden;
+  margin-top: 5%;
+  margin-right: 5%
 }
 
 .rounded-image img {
@@ -28,7 +58,7 @@ img {
 }
 
 .artist-name {
-  color: white;
+  color: rgb(127, 206, 166);
   font-size: 50px;
 }
 
@@ -41,4 +71,6 @@ img {
 .more-about-me {
   font-size: 30px;
   color: white;
+  padding-top: 10%;
+  padding-right: 10%;
 }
