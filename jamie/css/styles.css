@@ -8,6 +8,7 @@
 
 body {
   font-size: 16px;
+  background-color: lavender;
 }
 
 
@@ -57,6 +58,7 @@ h1:hover {
 img {
   height: auto;
   width: 100%;
+  border-color: lightblue;
 }
 
 
@@ -101,6 +103,7 @@ img {
   object-fit: cover;
   object-fit: cover;
   padding: 10px;
+  margin-left: 40px;
 }
 
 .commission-title {
@@ -126,6 +129,7 @@ label {
   align-items: center;
 }
 
+
 h2 {
   padding: 10px;
   background-color: coral;
@@ -139,5 +143,21 @@ h2 {
 
 h2:hover {
   transform: scale(110%);
+}
 
+.slide_menu {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  background-color: coral;
+  border-radius: 25px;
+  align-self: center;
+  margin: auto;
+  width: 85%;
+  transition: 0.5s;
+  transform-origin: 50% 50%;
+}
+
+.slide_menu:hover {
+  transform: scale(110%);
 }
