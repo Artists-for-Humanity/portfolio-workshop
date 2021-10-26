@@ -100,9 +100,14 @@ a {
 
 /* HALLOWEEN FEATURE */
 
-body:hover {
-  cursor: url("../images/candy corn.cur"), default;
+.halloween-parent {
+  cursor: url("../images/candycornup.png") 50 50, default;
 }
+
+.halloween-parent a {
+  cursor: url("../images/candycorndown.png") 50 50, pointer;
+}
+
 
 
 .pumpkin {
@@ -129,6 +134,20 @@ body:hover {
 .trick-or-treat {
   font-size: 100px;
   font-family: myFirstFont;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @font-face {
@@ -171,15 +190,16 @@ body:hover {
   padding: 20px;
   margin: 100px;
   background-color: white;
+  border: 5px solid #E26812;
 
 }
 
 .fact:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 .halloween-image img {
-  border: 5px solid orange;
+  border: 5px solid #E26812;
 }
 
 .halloween-image {
@@ -189,7 +209,7 @@ body:hover {
 .halloween-sub-title {
   font-size: 45px;
   padding: 20px;
-  color: orange;
+  color: #E26812;
   font-family: myFirstFont;
 }
 
@@ -201,18 +221,18 @@ body:hover {
 }
 
 .credits {
-  background-color: #80461b;
-  padding: 50px;
+  padding: 25px;
 }
 
 .source-text a {
   padding: 5px;
-  color: orange;
-  font-family: myFirstFont
+  color: black;
+  font-family: myFirstFont;
+  font-size: 70px;
 }
 
 .source-text {
-  color: orange;
+  color: #E26812
 }
 
 
