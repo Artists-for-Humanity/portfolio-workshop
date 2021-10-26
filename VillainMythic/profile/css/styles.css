@@ -4,54 +4,106 @@
   box-sizing: border-box;
 }
 
-.menu {
-  background-color: coral;
+.tabs {
+  color: white;
+  border-color: black;
   padding: 10px;
+  border-right: 2px black solid;
+  border-left: 2px black solid;
+}
+
+.sub-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+.card {
+  background-color: coral;
+  padding: 1.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.card-2 {
+  margin: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 2%;
+  background-color: rgb(60, 60, 134);
+  border-radius: 15px;
+}
+
+.user-info {
+  border: 1px black solid;
+  background-color: coral;
+  padding: 2%;
+  font-size: 25px;
+}
+
+.content-box {
+  color: rgb(182, 182, 182);
+
+}
+
+.line {
+  border: 1px black solid;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+}
+
+img {
+  max-width: 175px;
+  height: auto;
+  border-radius: 50%;
+  border: 10px black solid;
+
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.user-info-text {
+  border-bottom: 2px black solid;
+  margin-bottom: 25px;
+  padding: 2%;
+
+}
+
+.bio {
+  border-top: 2xp black solid;
+  padding: 2px;
+}
+
+.box {
+  flex-direction: column;
+}
+
+@media (min-width: 655px) {
+
+  .user-info {
+
+    font-size: 35px;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  .user-content {
+    font-size: 30px;
+  }
 
 
 }
 
 body {
-  font-size: 16px;
-  padding: 15px;
-
+  font-family: "Comic Neue";
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-
-
-}
-
-.my-header {
-  color: rgb(239, 239, 248);
-}
-
-.user-desc {
-  border: 2px;
-  border-style: solid;
-  color: white;
-  border-color: black;
-  font-size: 18px;
-  background-color: coral;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-}
-
-.text {
-  color: black;
-  text-align: center;
-  border: 2px;
-  border-style: solid;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-  background-color: coral;
-}
-
-.content {}

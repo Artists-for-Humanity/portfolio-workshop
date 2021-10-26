@@ -11,10 +11,10 @@
 
 .card {
     background-color: coral;
-    border-radius: 3%;
     padding: 1.5%;
     margin-left: 2%;
     margin-right: 2%;
+
 }
 
 .tabs {
@@ -26,6 +26,9 @@
     padding: 10px;
     border-right: 1px black solid;
     border-left: 1px black solid;
+    font-weight: 900;
+
+
 
 }
 
@@ -35,6 +38,7 @@
     justify-content: space-between;
     border-top: black 1px solid;
     border-bottom: black 1px solid;
+
 
 }
 
@@ -93,7 +97,17 @@
 
 }
 
-.card-text {
-    padding-left: 1%;
-    padding-right: 1%;
+.box-text {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+img {
+    max-width: 150px;
+
+
+}
+
+body {
+    font-family: "Comic Neue";
 }
