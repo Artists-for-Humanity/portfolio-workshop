@@ -6,6 +6,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 body {
   height: 100%;
@@ -43,6 +44,53 @@ a:hover {
 }
 
 
+.message-box {
+  --width: 90%;
+  position: absolute;
+  margin: auto;
+  width: var(--width);
+  left: calc(50% - var(--width) / 2);
+  background-color: rgb(238, 174, 202);
+  padding: 10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+  margin-top: 100px;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exit-button {
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(246, 48, 48);
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+.message-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.text-box {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  background-color: rgba(148, 187, 233, 1);
+  padding: 200px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+}
+
 img {
   margin: auto;
   margin-left: 500px;
@@ -51,6 +99,7 @@ img {
   width: 50%;
   border-color: lightblue;
 }
+
 
 
 /*h1 {
