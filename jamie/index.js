@@ -8,7 +8,3 @@ function slide_menu() {
         slide_menu.dataset.open = "true"
     }
 }
-
-const button = document.querySelector('.slide_menu_button')
-button.addEventListener("click", slide_menu)
-console.log(button)
