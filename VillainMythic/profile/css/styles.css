@@ -55,7 +55,7 @@
 
 }
 
-img {
+.pfp img {
   max-width: 175px;
   height: auto;
   border-radius: 50%;
@@ -106,4 +106,8 @@ img {
 
 body {
   font-family: "Comic Neue";
+}
+
+.link {
+  color: white;
 }
