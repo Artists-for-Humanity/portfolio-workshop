@@ -24,7 +24,9 @@
       quis enim eget, varius egestas nunc.</p>
   </header>
   <main>
-    <img src="images/Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg" alt="" />
+    {% for item in items %}
+    <div>{{item['title']}}</div>
+    {% endfor %}
   </main>
   <footer>Copyright 2021</footer>
   <!-- Your HTML ends here -->
