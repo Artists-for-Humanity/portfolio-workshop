@@ -4,37 +4,272 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/15c14edcc44ce5f6b601206439e7eba2?family=Janna+LT);
+
+
 
 
 body {
   font-size: 16px;
   background-color: rgb(224, 228, 255);
+  height: 1000000000000px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  margin: auto;
+  max-width: 30%;
+  /*object-fit: cover;*/
 }
 
 /* start here */
 
+.my-header {
+  position: fixed;
+  background-color: rgb(224, 228, 255);
+  border-bottom: 2px solid #aa50cf;
+  top: 0;
+}
+
 .name {
-  font-size: 46px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  /* font-size: 60px; */
+  /* font-family: 'Nova Mono'; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 15%;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .nav-link {
-  font-family:
-    font-size: 18px;
+  font-size: 26px;
+  font-family: "Janna LT";
+  color: black;
+  text-decoration: none;
 }
+
+main {
+  margin-top: 160px;
+}
+
+.nav-link:hover {
+  -webkit-animation: rainbow 10s infinite;
+  -ms-animation: rainbow 10s infinite;
+  -o-animation: rainbow 10s infinite;
+  animation: rainbow 10s infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+
+  10% {
+    color: #ff8000;
+  }
+
+  20% {
+    color: #ffff00;
+  }
+
+  30% {
+    color: #80ff00;
+  }
+
+  40% {
+    color: #00ff00;
+  }
+
+  50% {
+    color: #00ff80;
+  }
+
+  60% {
+    color: #00ffff;
+  }
+
+  70% {
+    color: #0080ff;
+  }
+
+  80% {
+    color: #0000ff;
+  }
+
+  90% {
+    color: #8000ff;
+  }
+
+  100% {
+    color: #ff0080;
+  }
+}
+
+@-ms-keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+
+  10% {
+    color: #ff8000;
+  }
+
+  20% {
+    color: #ffff00;
+  }
+
+  30% {
+    color: #80ff00;
+  }
+
+  40% {
+    color: #00ff00;
+  }
+
+  50% {
+    color: #00ff80;
+  }
+
+  60% {
+    color: #00ffff;
+  }
+
+  70% {
+    color: #0080ff;
+  }
+
+  80% {
+    color: #0000ff;
+  }
+
+  90% {
+    color: #8000ff;
+  }
+
+  100% {
+    color: #ff0080;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+
+  10% {
+    color: #ff8000;
+  }
+
+  20% {
+    color: #ffff00;
+  }
+
+  30% {
+    color: #80ff00;
+  }
+
+  40% {
+    color: #00ff00;
+  }
+
+  50% {
+    color: #00ff80;
+  }
+
+  60% {
+    color: #00ffff;
+  }
+
+  70% {
+    color: #0080ff;
+  }
+
+  80% {
+    color: #0000ff;
+  }
+
+  90% {
+    color: #8000ff;
+  }
+
+  100% {
+    color: #ff0080;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+
+  10% {
+    color: #ff8000;
+  }
+
+  20% {
+    color: #ffff00;
+  }
+
+  30% {
+    color: #80ff00;
+  }
+
+  40% {
+    color: #00ff00;
+  }
+
+  50% {
+    color: #00ff80;
+  }
+
+  60% {
+    color: #00ffff;
+  }
+
+  70% {
+    color: #0080ff;
+  }
+
+  80% {
+    color: #0000ff;
+  }
+
+  90% {
+    color: #8000ff;
+  }
+
+  100% {
+    color: #ff0080;
+  }
+}
+
 
 hr.solidline {
   border-top: 2px solid gray;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .stroke {
+    -webkit-text-stroke: .35px rgb(119, 24, 182);
+    -webkit-text-fill-color: rgb(233, 211, 255);
+  }
+}
+
+.nav-button {
+  padding-left: 40px;
+  padding-right: 40px;
 }
