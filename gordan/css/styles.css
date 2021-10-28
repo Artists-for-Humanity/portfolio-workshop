@@ -12,6 +12,10 @@
   background-color: #eedc82;
 }
 
+.creambg {
+  background-color: #fff2af;
+}
+
 h1 {
   text-align: center;
   font-size: 90px;
@@ -56,6 +60,7 @@ p {
 }
 
 .item {
+  background-color: #fff2af;
   margin-left: 3%;
   margin-right: 3%;
   border-width: 20px;
@@ -65,7 +70,7 @@ p {
   padding: 4%;
   display: flex;
   justify-content: space-around;
-  gap: 40px;
+  gap: 55px;
   align-items: center;
 }
 
@@ -75,7 +80,11 @@ img {
   border-width: 12px;
   border-color: black;
   border-style: solid;
-  border-radius: 5%
+  border-radius: 25px;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
 }
 
 .item+.item {

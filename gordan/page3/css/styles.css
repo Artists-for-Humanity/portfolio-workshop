@@ -1,0 +1,116 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #fff2c2;
+}
+
+.flaxbg {
+  background-color: #eedc82;
+}
+
+.creambg {
+  background-color: #fff2af;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  font-family: Overpass;
+}
+
+a {
+  font-size: 26px;
+  font-family: Georama;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px 40px 0px 40px;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.navlinkborder {
+  border-radius: 30px;
+  border-style: solid;
+  border-color: brown;
+  border-width: 10px;
+  padding: 8px 18px 8px 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+main {
+  margin: 0% 20% 0% 20%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.infofields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  font-family: Georama;
+  font-size: 16px;
+  padding: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 8px;
+  border-radius: 26px;
+}
+
+.smallbox {
+  height: 50px;
+  width: 450px;
+}
+
+.bigbox {
+  height: 150px;
+  width: 450px;
+}
+
+textarea {
+  resize: none
+}
+
+.text {
+  background-color: #fff2af;
+  border-color: #91ba8f;
+  border-style: solid;
+  border-width: 12px;
+  border-radius: 40px;
+  padding: 20px 20px 20px 20px;
+  font-family: Georama;
+  font-size: 21px;
+}
+
+.button {
+  font-size: 44px;
+  font-family: Georama;
+  border-radius: 20px;
+  border-width: 4px;
+  background-color: #FF7F7F;
+  padding: 10px 20px 10px 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+}
