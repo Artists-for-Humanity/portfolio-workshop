@@ -48,6 +48,8 @@ a {
   border-color: black;
   margin-top: 100px;
   margin-bottom: 100px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
 }
 
 .top-row {
@@ -74,7 +76,6 @@ a {
 }
 
 .text-box {
-  position: relative;
   margin: auto;
   width: 90%;
   background-color: rgba(148, 187, 233, 1);
@@ -336,6 +337,7 @@ img {
 
 .progress-text {
   vertical-align: middle;
+  text-transform: uppercase;
 }
 
 
@@ -346,6 +348,7 @@ nav {
 }
 
 nav ul {
+  position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
