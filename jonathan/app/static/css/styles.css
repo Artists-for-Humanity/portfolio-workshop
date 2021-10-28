@@ -56,10 +56,20 @@ a {
 
 .copyright-edit {
   background-color: lightgray;
-  /* background-color: pink; */
   color: white;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright-edit a {
+  color: white;
+  font-size: 16px;
+}
+
+.footer-text {
+  flex-direction: row;
 }
 
 .employees {
