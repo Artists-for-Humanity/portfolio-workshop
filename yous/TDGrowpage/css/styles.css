@@ -1,0 +1,121 @@
+x*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  /* background-image: url("../images/webback1.jpeg"); */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+header {
+  padding-top: 10px;
+}
+
+.my-header {
+  color: rgb(121, 116, 116);
+}
+
+h1 {
+  font-family: "JetBrains Mono";
+  text-align: center;
+  font-size: 7vw;
+  font-weight: 400;
+  padding-top: 20px;
+  border-radius: 100px;
+  padding-bottom: 15px;
+}
+
+@keyframes fadeinTitle {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30vw, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 600px) {}
+
+p {
+  color: red;
+  font-size: 17px;
+  font-family: "JetBrains Mono";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 15px;
+}
+
+.nav-item {
+  font-size: 30px;
+  transition: 1s;
+  font-family: "JetBrains Mono";
+  color: #919191;
+  text-decoration: none;
+  padding: 20px;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  animation-name: fadeinGrid;
+
+
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+.video {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: #919191;
+}
+
+.button {
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+  border-color: transparent transparent transparent #202020;
+  cursor: pointer;
+  will-change: border-width;
+  transition: all 0.2s ease;
+}
+
+.button.paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+
+.button:hover {
+  border-color: transparent transparent transparent #404040;
+}

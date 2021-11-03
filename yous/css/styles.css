@@ -15,7 +15,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 30px;
 }
 
 header {
@@ -85,11 +84,9 @@ p {
 }
 
 .item {
-  overflow: hidden;
   padding: 40px;
   transition: 0.5s;
   width: 33.33333%;
-  border-radius: 70px;
   z-index: 1;
   transform: translate3d(0, 0, 0px) scale(1);
 }
@@ -98,8 +95,27 @@ p {
   transform: translate3d(0, 0, 100px) scale(1.2);
 }
 
+.item-inner {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 .item img {
   width: 100%;
+}
+
+.item video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item:hover video {
+  opacity: 1;
 }
 
 .nav {
@@ -113,7 +129,6 @@ p {
   font-size: 30px;
   transition: 1s;
   font-family: "JetBrains Mono";
-  border-radius: 45px;
   color: #919191;
   text-decoration: none;
   padding: 20px;
