@@ -10,5 +10,7 @@ From inside the `/stephen` folder run these commands in Terminal:
 
 From inside the `/stephen` folder run these commands from the Terminal:
 
+- `. venv/bin/activate`
 - `export FLASK_ENV=development`
 - `export FLASK_APP=app`
+- `flask run`

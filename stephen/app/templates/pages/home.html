@@ -11,6 +11,7 @@
 
 <body>
   <!-- Your HTML starts here -->
+  {% include 'nav.html' %}
   <header class="my-header">
     <h1>Jane Doe</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem quam, elementum quis felis sit amet, gravida
@@ -24,9 +25,11 @@
       quis enim eget, varius egestas nunc.</p>
   </header>
   <main>
-    {% for item in items %}
-    <div>{{item['title']}}</div>
-    {% endfor %}
+    <div class="items">
+      {% for item in items %}
+      {% include 'item.html' %}
+      {% endfor %}
+    </div>
   </main>
   <footer>Copyright 2021</footer>
   <!-- Your HTML ends here -->

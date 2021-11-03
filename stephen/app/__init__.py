@@ -13,11 +13,13 @@ def create_app(test_config=None):
     @app.route('/')
     def homepage():
         items = [{
-            "title": "Item 1"
+            "title": "Item 1",
+            "image": "Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
         }, {
-            "title": "Item 2"
+            "title": "Item 2",
+            "image": "Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
         }]
-        return render_template('index.html', items=items)
+        return render_template('pages/home.html', items=items)
     
     return app
 
