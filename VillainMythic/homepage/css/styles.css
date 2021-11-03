@@ -1,0 +1,99 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: coral;
+    border-radius: 3%;
+    padding: 1.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.tabs {
+
+    color: white;
+    border-color: black;
+    border-bottom: 1px;
+    border-top: 1px;
+    padding: 10px;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+
+}
+
+.sub-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+
+}
+
+
+.trending {
+    color: white;
+    background-color: coral;
+    padding: 1%;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.trending-edit {
+    border: 1px, solid, black;
+}
+
+.visit-again {
+
+    color: white;
+    background-color: coral;
+    padding: 1%;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.text {
+    border: 1px, solid black;
+}
+
+.content {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 3%;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.box {
+    border: 1px;
+    border-style: solid;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.card-text {
+    padding-left: 1%;
+    padding-right: 1%;
+}

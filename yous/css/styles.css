@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-image: url("../images/webbackgroundgengar.jpeg");
+  background-color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+img {
+  width: 500px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.my-header {
+  color: blue;
+}
+
+h1 {
+  font-family: Modak;
+  text-align: center;
+  font-size: 175px;
+  font-weight: 400;
+}
+
+p {
+  color: red;
+  font-size: 17px;
+  font-family: Chango;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.container {
+  max-width: 500px;
+}
