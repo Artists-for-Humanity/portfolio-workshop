@@ -1,1 +1,0 @@
-<img href="<?php $link ?>" src="<?php $image ?>" class="gallery-image" alt="<?php $description3 ?>" />
