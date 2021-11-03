@@ -7,16 +7,16 @@ from flask import (
 
 def create_app(test_config=None):
     # create and configure the app
-    app = Flask(__name__, instance_relative_config=True, static_url_path='', static_folder='static')
+    app = Flask(__name__, instance_relative_config=True, static_url_path='', static_folder='./static')
 
     # a simple page that says hello
     @app.route('/')
     def homepage():
-        item  = [{
+        items  = [{
             "title": "item 1"
         }, {
             "title": "Item 2"
         }]
-        return render_template('index.html', items=item)
+        return render_template('home.html', items=items)
     
     return app
