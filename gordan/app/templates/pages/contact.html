@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Your HTML starts here -->
+
+    {% with title="Contact" %}
+    {% include 'nav.html' %}
+    {% endwith %}
+    <main>
+        <div class="infofields">
+            <input type="text" class="creambg input smallbox" placeholder="Full Name" />
+            <input type="text" class="creambg input smallbox" placeholder="Your Email" />
+            <input type="text" class="creambg input smallbox" placeholder="Your Subject" />
+            <textarea type="text" class="creambg input bigbox" placeholder="Your Message"></textarea>
+        </div>
+        <div class="right">
+            <div class="text">
+                <p>Need Help? Please call us at 123-456-7890 or contact our support through the form to the left. We
+                    will try
+                    our
+                    best to get back to everyone within 48 hours. Please do not send multiple emails, as that will slow
+                    down our
+                    efforts to respond.</p>
+                <br>
+                <p>Thank you for understanding. </p>
+                <p>Sincerely, The Jane Doe Team </p>
+            </div>
+            <div>
+                <button type="button" class="button">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <br><br>
+    <footer>Copyright 2021</footer>
+    <!-- Your HTML ends here -->
+</body>
+
+</html>
