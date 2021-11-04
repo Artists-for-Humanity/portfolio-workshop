@@ -49,15 +49,17 @@
   </header>
   <div class="employees">
     <ul>
+      {% for item in items %}
       <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
         <div class="employees-links-text">
-          <a href="/portfolio/index.html">Manuel D. Kirts</a>
+          <a href="/portfolio/index.html">{{item.name}}</a>
         </div>
         <div class="employees-link-img">
-          <img src="/images/Manuel D. Kirts.jpeg">
+          <img src="{{item.image}}">
         </div>
       </div>
-      <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
+      {% endfor %}
+      <!-- <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
         <div class="employees-link-img">
           <img src="/images/William C. Yu.jpeg">
         </div>
@@ -96,7 +98,7 @@
         <div class="employees-links-text">
           <a href="url">Jose H. Schaffer</a>
         </div>
-      </div>
+      </div> -->
     </ul>
   </div>
   <div class="copyright-edit">

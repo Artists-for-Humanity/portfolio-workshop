@@ -87,6 +87,10 @@ a {
   border-top: black solid 1px;
 }
 
+.employees-links:nth-child(even) .employees-links-text {
+  order: 1;
+}
+
 .employees-links-text {
   padding: 20px;
   display: flex;

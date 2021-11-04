@@ -14,3 +14,7 @@ From inside the `/jonathan` folder run these commands from the Terminal:
 - `export FLASK_ENV=development`
 - `export FLASK_APP=app`
 - `flask run`
+
+' {% for item in items %}
+      {% include 'item.html' %}
+      {% endfor %} '

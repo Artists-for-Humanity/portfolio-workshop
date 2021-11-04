@@ -13,9 +13,20 @@ def create_app(test_config=None):
     @app.route('/')
     def homepage():
         items  = [{
-            "title": "item 1"
+            "name": "William C. Yu",
+            "image": "/images/William C. Yu.jpeg"
         }, {
-            "title": "Item 2"
+            "name": "Amie C. Gram",
+            "image": "/images/Amie C. Gram .jpeg"
+        }, {
+            "name": "Chris Peanuts",
+            "image": "/images/Leonard B. Andrews .jpeg"
+        },{
+            "name": "Orville M. Bober",
+            "image": "/images/Orville M. Bober .jpeg"
+        },{
+            "name":"Jose H. Schaffer",
+            "image":"/images/Jose H. Schaffer .jpeg"
         }]
         return render_template('home.html', items=items)
     
