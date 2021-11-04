@@ -73,7 +73,7 @@ def create_app(test_config=None):
             "image": "Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
         },]
         return render_template('commission.html', items=items)
-
+#, items=items
     @app.route('/profile/<username>/edit')
     def namePage(username):
         user = userInfo[username]
