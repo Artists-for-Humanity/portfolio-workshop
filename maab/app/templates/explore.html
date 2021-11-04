@@ -11,6 +11,10 @@
   <body class="background-explore">
    <div class="box-2">
       <div class="gallery">
+        {% for image in images %}
+        <img src="{{image.src}}" alt="{{image.alt}}" />
+        {% endfor %}
+        <!--
         <img src="images/ocean.jpg" alt="ocean img" />
         <img src="images/tan.jpg" alt="tan img" />
         <img src="images/city.jpg" alt="city img" />
@@ -21,5 +25,7 @@
         <img src="images/ribbon.jpg" alt="ribbon img" />
         <img src="images/black.jpg" alt="black img" />
         <img src="images/drums.jpg" alt="drums img" />
+        -->
+      </div>
   </body>
 </html>
