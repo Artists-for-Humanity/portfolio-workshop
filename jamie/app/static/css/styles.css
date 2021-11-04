@@ -5,7 +5,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 body {
@@ -130,12 +129,8 @@ a {
 }
 
 img {
-  margin: auto;
-  margin-left: 500px;
-  padding-top: 200px;
+  max-width: 100%;
   height: auto;
-  width: 50%;
-  border-color: lightblue;
 }
 
 .slide {
@@ -144,6 +139,13 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.slide img {
+  margin: auto;
+  padding-top: 200px;
+  width: 50%;
+  border-color: lightblue;
 }
 
 .slide h1 {
