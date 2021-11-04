@@ -6,27 +6,16 @@
     <title>Amy Kent - Home</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
-
+    <link href="//db.onlinewebfonts.com/c/15c14edcc44ce5f6b601206439e7eba2?family=Janna+LT" rel="stylesheet"
+        type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-    {% for item in items %}
-    {% include 'item.html' %}
-    {% endfor %}
-    <header class="my-header">
-        <nav class="nav">
-            <link href="//db.onlinewebfonts.com/c/15c14edcc44ce5f6b601206439e7eba2?family=Janna+LT" rel="stylesheet"
-                type="text/css" />
-            <a href="/haley/index.html" class="nav-link nav-button">HOME</a>
-            <a href="/haley/about.html" class="nav-link nav-button">ABOUT ME</a>
-        </nav>
-        <img src="images/amy-handlettering.png" class="name">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-    </header>
+    {% include 'nav.html' %}
 
     <main>
         <img src="images/Gomez Talbot, Amelie.jpg" class="pink-building">

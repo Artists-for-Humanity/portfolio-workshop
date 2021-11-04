@@ -26,4 +26,8 @@ def create_app(test_config=None):
         }]
         return render_template('home.html', items=items)
 
+    @app.route('/about')
+    def aboutpage():
+        return render_template('about.html')
+
     return app
