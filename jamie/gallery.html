@@ -9,34 +9,53 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
 
-<body>
-    <nav class-=nav-bar>
-        <div class=nav-buttons>
-            <a href="index.html"> About Me</a>
-            <a href="gallery.html"> Gallery </a>
-            <a href="commission.html"> Commision </a>
-        </div>
+<body class="bg-transition">
+    <nav class="nav-buttons">
+        <ul>
+            <li class="nav-button">
+                <a href="index.html">home</a>
+                <span></span><span></span><span></span><span></span>
+            </li>
+            <li class="nav-button">
+                <a href="gallery.html">products</a>
+                <span></span><span></span><span></span><span></span>
+            </li>
+            <li class="nav-button">
+                <a href="commission.html">services</a>
+                <span></span><span></span><span></span><span></span>
+            </li>
+            <li class="nav-button">
+                <a href="gallery.html">contacts</a>
+                <span></span><span></span><span></span><span></span>
+            </li>
+        </ul>
     </nav>
     <!-- Your HTML starts here -->
-    <main>
-        <div class="gallery-title">my works</div>
-
-        <div class="gallery-images">
-            <img href="/" src="images/pic-1.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-2.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-3.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-4.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-5.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-6.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-7.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-8.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-9.jpg" class="gallery-image" alt="" />
-            <img href="/" src="images/pic-10.jpg" class="gallery-image" alt="" />
+    <div class="gallery">
+        <div class="container">
+            <section class="slide" id="first">
+                <img src="images/pic-15.jpg">
+            </section>
+            <section class="slide" id="second">
+                <img src="images/pic-7.jpg">
+            </section>
+            <section class="slide" id="third">
+                <img src="images/pic-6.jpg">
+            </section>
+            <section class="slide" id="fourth">
+                <img src="images/pic-10.jpg">
+            </section>
+            <section class="slide" id="fifth">
+                <img src="images/pic-1.jpg">
+            </section>
         </div>
-
-    </main>
-    <footer>Copyright 2021</footer>
+    </div>
     <!-- Your HTML ends here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="gallery.js"></script>
 </body>
+
 
 </html>
