@@ -15,8 +15,9 @@ def create_app(test_config=None):
 
     # a simple page that says hello
     @app.route("/")
-    def homepage():
-        items = [{"title": "Item 1"}, {"title": "Item 2"}]
-        return render_template("home.html", items=items)
+    def nav():
+        items = [{"title": ""}]
+        content_box= [{"title": ""}, {"title": ""}, {"titles": ""}]
+        return render_template( "homepage/home.html", items=items, content_box=content_box)
 
     return app

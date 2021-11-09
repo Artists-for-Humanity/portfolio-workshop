@@ -52,6 +52,8 @@
   border-color: black;
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 5%;
+  ;
 }
 
 .trending-edit {
@@ -59,7 +61,7 @@
 }
 
 .visit-again {
-
+  margin-top: 5%;
   color: white;
   background-color: coral;
   padding: 1%;
@@ -110,4 +112,22 @@ img {
 
 body {
   font-family: "Comic Neue";
+
+}
+
+.recomended {
+  color: white;
+  background-color: coral;
+  padding: 1%;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.recomend-edit {
+  border: 1px, solid, black;
+
 }
