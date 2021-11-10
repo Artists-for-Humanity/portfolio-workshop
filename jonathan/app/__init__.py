@@ -13,6 +13,9 @@ def create_app(test_config=None):
     @app.route('/')
     def homepage():
         items  = [{
+            "name": "Manuel D. Kirts",
+            "image":"/images/Manuel D. Kirts.jpeg"
+        },{
             "name": "William C. Yu",
             "image": "/images/William C. Yu.jpeg"
         }, {
@@ -30,4 +33,9 @@ def create_app(test_config=None):
         }]
         return render_template('home.html', items=items)
     
+    @app.route("/halloween")
+    def halloweenpage(): 
+        return render_template('halloween.html')
+
+
     return app
