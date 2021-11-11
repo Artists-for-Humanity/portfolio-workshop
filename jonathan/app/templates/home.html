@@ -45,61 +45,12 @@
           </a>
         </div>
       </div>
-
   </header>
-  <div class="employees">
-    <ul>
-      {% for item in items %}
-      <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
-        <div class="employees-links-text">
-          <a href="/portfolio/index.html">{{item.name}}</a>
-        </div>
-        <div class="employees-link-img">
-          <img src="{{item.image}}">
-        </div>
-      </div>
-      {% endfor %}
-      <!-- <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
-        <div class="employees-link-img">
-          <img src="/images/William C. Yu.jpeg">
-        </div>
-        <div class="employees-links-text">
-          <a href="url">William C. Yu</a>
-        </div>
-      </div>
-      <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
-        <div class="employees-links-text">
-          <a href="url">Amie C. Gram</a>
-        </div>
-        <div class="employees-link-img">
-          <img src="/images/Amie C. Gram .jpeg">
-        </div>
-      </div>
-      <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
-        <div class="employees-link-img">
-          <img src="/images/Leonard B. Andrews .jpeg">
-        </div>
-        <div class="employees-links-text">
-          <a href="url">Chris Peanuts</a>
-        </div>
-      </div>
-      <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
-        <div class="employees-links-text">
-          <a href="url">Orville M. Bober</a>
-        </div>
-        <div class="employees-link-img">
-          <img src="/images/Orville M. Bober .jpeg">
-        </div>
-      </div>
-      <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
-        <div class="employees-link-img">
-          <img src="/images/Jose H. Schaffer .jpeg">
-        </div>
-        <div class="employees-links-text">
-          <a href="url">Jose H. Schaffer</a>
-        </div>
-      </div> -->
-    </ul>
+  {% include "peoplelist.html"%}
+  <div class="view-all-border">
+    <div class="view-all-link">
+      <a href="/people">"VIEW ALL"</a>
+    </div>
   </div>
   <div class="copyright-edit">
     <footer>Copyright 2021</footer>

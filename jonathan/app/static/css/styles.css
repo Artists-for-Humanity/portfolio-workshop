@@ -292,3 +292,10 @@ a {
 .card-description {
   padding: 10px;
 }
+
+
+
+.view-all-link {
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}

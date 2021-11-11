@@ -1,0 +1,54 @@
+<div class="employees">
+    <ul>
+        {% for person in people %}
+        <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
+            <div class="employees-links-text">
+                <a href="/portfolio/index.html">{{person.name}}</a>
+            </div>
+            <div class="employees-link-img">
+                <img src="{{person.image}}">
+            </div>
+        </div>
+        {% endfor %}
+        <!-- <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
+    <div class="employees-link-img">
+      <img src="/images/William C. Yu.jpeg">
+    </div>
+    <div class="employees-links-text">
+      <a href="url">William C. Yu</a>
+    </div>
+  </div>
+  <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
+    <div class="employees-links-text">
+      <a href="url">Amie C. Gram</a>
+    </div>
+    <div class="employees-link-img">
+      <img src="/images/Amie C. Gram .jpeg">
+    </div>
+  </div>
+  <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
+    <div class="employees-link-img">
+      <img src="/images/Leonard B. Andrews .jpeg">
+    </div>
+    <div class="employees-links-text">
+      <a href="url">Chris Peanuts</a>
+    </div>
+  </div>
+  <div class="employees-links" style="background-image: linear-gradient(to right, white, pink);">
+    <div class="employees-links-text">
+      <a href="url">Orville M. Bober</a>
+    </div>
+    <div class="employees-link-img">
+      <img src="/images/Orville M. Bober .jpeg">
+    </div>
+  </div>
+  <div class="employees-links" style="background-image: linear-gradient(to left, white, pink);">
+    <div class="employees-link-img">
+      <img src="/images/Jose H. Schaffer .jpeg">
+    </div>
+    <div class="employees-links-text">
+      <a href="url">Jose H. Schaffer</a>
+    </div>
+  </div> -->
+    </ul>
+</div>
