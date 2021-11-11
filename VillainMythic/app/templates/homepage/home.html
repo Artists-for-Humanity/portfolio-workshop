@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
-    {% for item in items %}
+    {% for nav in nav %}
     {% include 'nav.html' %}
     {% endfor %}
 
     </div>
     </div>
 
-    <div class="trending">
+    <div class="box-title">
         <div class="trending-edit">
             <h1 class="text">Trending </h1>
         </div>
@@ -29,17 +32,17 @@
         {% endfor %}
     </div>
     </div>
-    <div class="recomended">
-        <div class=recomend-edit>
-            <h1 class="text"> recomended </h1>
-        </div>
+    <div class="box-title ">
+
+        <h1 class="text"> Recomended </h1>
+    </div>
     </div>
     <div class="content">
         {% for box in content_box %}
         {% include 'homepage/box.html' %}
         {% endfor %}
     </div>
-    <div class="visit-again">
+    <div class="box-title">
         <h1>Visit Again</h1>
     </div>
 

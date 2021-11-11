@@ -16,8 +16,15 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route("/")
     def nav():
-        items = [{"title": ""}]
+        nav = [{"title": ""}]
         content_box= [{"title": ""}, {"title": ""}, {"titles": ""}]
-        return render_template( "homepage/home.html", items=items, content_box=content_box)
-
+        return render_template( "homepage/home.html", nav=nav, content_box=content_box)
+    
+    @app.route("/profile")
+    def prof():
+        nav = [{"title": ""}]
+        userpfp= [{"title": ""}]
+        userbio= [{"title": ""}]
+        usercontent=[{"title": ""}]
+        return render_template( "profile/profile.html", userpfp=userpfp, userbio=userbio, nav=nav, usercontent=usercontent)
     return app

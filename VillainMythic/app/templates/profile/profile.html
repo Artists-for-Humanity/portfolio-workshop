@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav">
+        {% for nav in nav %}
+        {% include 'nav.html' %}
+        {% endfor %}
+    </div>
+    <div class="box-title">
+        <h1>
+            your profile
+        </h1>
+    </div>
+    <div class="about-user">
+        <div class="pfp">
+            {% for userpfp in userpfp %}
+            {% include 'profile/pfp.html' %}
+            {% endfor %}
+        </div>
+        <div class="bio">
+            {% for userbio in userbio %}
+            {% include 'profile/bio.html' %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="box-title">
+        <h1>
+            your projects...
+        </h1>
+    </div>
+    <div class="user-content-box">
+        <div class="user-content">
+            {% for usercontent in usercontent %}
+            {% include 'profile/uc.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</body>
