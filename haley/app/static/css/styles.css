@@ -250,8 +250,33 @@ main {
   }
 }
 
-.about-paragraph {}
+.about-page {
 
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 40px;
+
+}
+
+.about-photo {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.about-me {
+  font-family: "Janna Lt";
+  font-size: 36px;
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+}
 
 .row {
   display: flex;
@@ -274,11 +299,14 @@ main {
 }
 
 .wrapper {
-  width: 1200px;
+  /* width: 2000px; */
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  max-width: 200%;
 }
 
 .wrapper>img {
   flex: 1 1 150px;
+
 }
