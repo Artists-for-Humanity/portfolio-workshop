@@ -135,4 +135,21 @@ img {
   color: white;
   height: 500px;
   background-color: black;
+  text-align: end;
+  padding: 30px;
+}
+
+.footer-title {
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-weight: 1000;
+}
+
+.footer-subtext {
+  color: gray;
 }
