@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Portfolio Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/reset.css" type="text/css" />
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-</head>
-
-<body>
-  <!-- Your HTML starts here -->
-  <main>
-    <div class="box">
-      <div class="image-text">
-        <img src="images/girl.jpeg" alt="image 1" />
-        <h1 class="bottom-txt">I am Alexandra Fransisco</h1>
-        <h2 class="top-txt">WELCOME!</h2>
-        <h3 class="mid-txt">Visual Artist</h3>
+  <body>
+    <!-- Your HTML starts here -->
+    <main>
+      <div class="box">
+        <div class="image-text">
+          <img src="images/girl.jpeg" alt="image 1" />
+          <h1 class="bottom-txt">I am Alexandra Fransisco</h1>
+          <h2 class="top-txt">WELCOME!</h2>
+          <h3 class="mid-txt">Visual Artist</h3>
+        </div>
+        <a class="button" href="/explore">Explore</a>
+        <div class="contact-info">
+          <img src="/images/abstract.jpg" alt="image 2" />
+          <h1 class="contact">Contact Me:</h1>
+          <h2 class="list">
+            <ul style="list-style-type: none">
+              {% for social in contact_info %}
+              <li>{{social}}</li>
+              {% endfor%}
+            </ul>
+          </h2>
+        </div>
       </div>
-      <a class="button" href="/explore">Explore</a>
-      <div>
-        <img src="images/abstract.jpeg" alt="image 2" />
-      </div>
-  </main>
-  <!-- <footer>Copyright 2021</footer> -->
-  <!-- Your HTML ends here -->
-</body>
-
+    </main>
+    <!-- <footer>Copyright 2021</footer> -->
+    <!-- Your HTML ends here -->
+  </body>
 </html>

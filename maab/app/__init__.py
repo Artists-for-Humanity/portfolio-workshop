@@ -20,8 +20,12 @@ def create_app(test_config=None):
             "title3": "",
             "image": "images/girl.jpeg"
         }]
-        return render_template('home.html', items=items)
-    # a simple page that says hello
+        contact_info = [
+            "Email:___",
+            "Phone Number:(###-###-###)",
+            "Instagram:____"
+        ]
+        return render_template('home.html', items=items, contact_info=contact_info)
 
     @app.route('/explore')
     def explorepage():
