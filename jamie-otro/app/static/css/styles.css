@@ -65,6 +65,7 @@ a {
 }
 
 /*button styling */
+
 button {
   font-size: 20px;
   cursor: pointer;
@@ -73,6 +74,7 @@ button {
 button:hover {}
 
 /* text styling */
+
 .intro-text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -129,6 +131,8 @@ img {
   margin: auto;
   width: 50%;
 }
+
+/* footer styling */
 
 .footer {
   margin-top: 60px;
