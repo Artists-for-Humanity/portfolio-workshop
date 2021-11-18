@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, request
 from flask import (render_template)
 
 
@@ -13,6 +13,10 @@ def create_app(test_config=None):
 
     # a simple page that says hello
     @app.route('/')
+    @app.route('/home')
+    def homepage():
+        return render_template('/pages/index.html')
+
     @app.route('/portfolio')
     def portfoliopage():
         items = [{
@@ -105,5 +109,23 @@ def create_app(test_config=None):
             "/images/Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
         }]
         return render_template('/pages/portfolio.html', items=items)
+
+    @app.route('/contact', methods=['GET', 'POST'])
+    def contactpage():
+        formData = None
+        if request.method == 'POST':
+            formData = {
+                "name": request.form.get('name'),
+                "email": request.form.get('email'),
+                "subject": request.form.get('subject'),
+                "message": request.form.get('message'),
+            }
+
+        return render_template('/pages/contact.html', formData=formData)
+
+    @app.route('/formsubmit', methods=['GET', 'POST'])
+    def formsubmitpage():
+        print(request.json)
+        return {"status": "success"}
 
     return app
