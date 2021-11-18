@@ -3,75 +3,105 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>~portfolio~</title>
+    <title>BCHS: Boston Collaborative High School</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
 
 <body>
-    {% include 'nav.html' %}
+    <nav>
+
+    </nav>
+
+
     <main>
-        <div class="message-box">
-            <div class="top-row">
-                <div class="message-title">message</div>
-                <div class="exit-button"> X </div>
+
+        <img src="images/school.jpg" class="hero-image">
+        <div class="nav-text">
+            <nav class="nav-items">
+                <div class="nav-item">about us</div>
+                <div class="nav-item" href="commisions/html">calendar</div>
+                <a class="nav-item" href="https://www.edmentum.com/course-catalog" target="_blank"
+                    rel="noopener noreferrer">courses</a>
+                <div class="nav-item">staff</div>
+                <div class="nav-item">contact</div>
+            </nav>
+        </div>
+        <div class="hero-text">
+            <h1>Welcome to</h1>
+            <p>Boston Collaborative</p>
+            <button>Learn more!</button>
+        </div>
+
+        <div class="intro-text">Boston Collaborative High School (BCHS) is an alternative high school within the Boston
+            Public Schools that serves opportunity youth.
+
+            <hr>
+            Programs within BPS:
+            Our School is unique in that it is a collaborative effort between BPS and Boston's community-based
+            organizations to serve students who have specific challenges and require a non-traditional approach to
+            learning.
+            <hr>
+            BCHS is a partnership of 6 community-based educational programs which include:
+            <br>
+            ABCD University High, EDCO
+            Youth, William J. Ostiguy High, LogOn Academy, St. Mary's Alternative School, and College Bound Middle
+            School..</div>
+
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <img class="testimonial-img" src="images/student1.jpg">
+                <div class="quote">"I was working on an English assignment. I was learning about singular and plural
+                    nouns, which is easy because plurals are similar in Spanish."" ~ Jean Luis Arias</div>
             </div>
-            <div class="text-box">
-                <div class="typewriter">
-                    <h1>Hi, I'm (name)</h1>
+            <div class="testimonial-item">
+                <div class="quote">"I was watching a video with Ms. Cardona. I learned that the French and English
+                    fought
+                    for control over the American colonies."" ~ Fabiola Murillo</div>
+                <img class="testimonial-img" src="images/student2.jpg">
+            </div>
+            <div class="testimonial-item">
+                <img class="testimonial-img" src="images/student3.jpg">
+                <div class="quote">"I was doing science with Ms. Cardona. We are learning about the metric system. In
+                    this photo, I was learning how to convert miles to kilometers, and inches to centimeters."" ~ Jose
+                    Armando Gudiel</div>
+            </div>
+            <div class="testimonial-item">
+                <div class="quote">"I was reading a story and answering questions in my English as a Second Language
+                    class. I am learned more vocabulary here because I get a lot o help from my teacher."" ~ Ronnier
+                    Perez
                 </div>
+                <img class="testimonial-img" src="images/student4.jpg">
             </div>
         </div>
-        <div class="row">
-            <div class="typewriter">
-                <h1 class="progress-text">What i know?</h1>
-            </div>
-            <div class="progress-bar">
-                <div class="skills">
-                    <div class="skills-bar">
-                        <div class="bar">
-                            <div class="info">
-                                <span>HTML</span>
-                            </div>
-                            <div class="progress-line"><span class="html"></span></div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="progress-line"><span class="css"></span></div>
-                                <div class="bar">
-                                    <div class="info">
-                                        <span>BOOTSTRAP</span>
-                                    </div>
-                                    <div class="progress-line"><span class="bootstrap"></span></div>
-                                    <div class="bar">
-                                        <div class="info">
-                                            <span>JAVASCRIPT</span>
-                                        </div>
-                                        <div class="progress-line">
-                                            <span class="javascript"></span>
-                                        </div>
-                                        <div class="bar">
-                                            <div class="info">
-                                                <span>C Programming</span>
-                                            </div>
-                                            <div class="progress-line"><span class="c"></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer"> woo look it's a footer
+            <div>CONTACT</div>
+            <div> Headmaster </div>
+            <div>Sherri Neasman</div>
+
+            <div>215 Dorchester Street</div>
+            <div>South Boston, MA 02127</div>
+
+            <div>Phone</div>
+            <div>617-635-8035</div>
+
+            <div>Fax</div>
+            <div>617-635-6821</div>
+
+            <div>School Hours</div>
+            <div>8:00 a.m.-3:00 p.m.</div>
+
+            <div>Early Dismissal, the day before Thanksgiving and last two days of school: 12:30 p.m.</div>
+
+            <div>Grades: 9-12</div>
+            <div>School Type: Alternative</div>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
-{% for item in items %}
-{% include 'item.html' %}
-{% endfor %}
 
 </html>
