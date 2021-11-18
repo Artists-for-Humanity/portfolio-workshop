@@ -119,3 +119,9 @@ body {
 body {
   background-color: rgb(70, 70, 70);
 }
+
+.line {
+  border: 1px solid #cccc;
+  margin-left: 2%;
+  margin-right: 2%;
+}

@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, app
 from flask import render_template
 
 
@@ -12,8 +12,17 @@ def create_app(test_config=None):
         static_url_path="",
         static_folder="./static",
     )
+    app.config.from_mapping(
+         DATABASE=os.path.join(app.instance_path, 'data.sqlite'
+    ))
+    app.config.from_pyfile('config.py', silent=True)
+   
+    from . import db
+    db.init_app(app)
 
-    # a simple page that says hello
+    from . import auth
+    app.register_blueprint(auth.bp)
+
     @app.route("/")
     def nav():
         nav = [{"title": ""}]
@@ -27,4 +36,5 @@ def create_app(test_config=None):
         userbio= [{"title": ""}]
         usercontent=[{"title": ""}]
         return render_template( "profile/profile.html", userpfp=userpfp, userbio=userbio, nav=nav, usercontent=usercontent)
+    
     return app
