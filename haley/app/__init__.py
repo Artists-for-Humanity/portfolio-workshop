@@ -14,20 +14,39 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/')
     def homepage():
-        items = [{
-            "title": "Item 1",
-            "image": "Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
-        }, {
-            "title": "Item 2",
-            "image": "Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
-        }, {
-            "title": "Item 6",
-            "image": "Mai, Shu Ru. Still Life Hunger Games Pear Green Table.jpg"
-        }]
-        return render_template('home.html', items=items)
+        images = [
+            "images/Gomez Talbot, Amelie.jpg",
+            "images/Santos, Dalys. frog.JPG",
+            "images/Choi, Ji-Sung. Still vase. peaches .JPG",
+            "images/Arcene, Adler, Sunset Water Bubbler .jpg",
+            "images/Brown-Thompson,%20Janelle.%22Color%20Pop%22.jpg"
+        ]
+        return render_template('home.html', images=images)
 
     @app.route('/about')
     def aboutpage():
-        return render_template('about.html')
+        textes = [
+            '''Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.''',
+            '''Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.''',
+            '''Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.''',
+            '''Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.'''
+        ]
+        return render_template('about.html', textes=textes)
 
     return app

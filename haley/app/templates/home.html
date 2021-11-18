@@ -20,11 +20,9 @@
     <main>
 
         <div class="wrapper">
-            <img src="images/Gomez Talbot, Amelie.jpg">
-            <img src="images/Santos, Dalys. frog.JPG">
-            <img src="images/Choi, Ji-Sung. Still vase. peaches .JPG"></img>
-            <img src="images/Arcene, Adler, Sunset Water Bubbler .jpg"></image>
-            <img src="images/Bui, Quyen. Rusty clock.JPG"></img>
+            {% for image in images %}
+            <img src="{{ image }}">
+            {% endfor %}
         </div>
 
     </main>
