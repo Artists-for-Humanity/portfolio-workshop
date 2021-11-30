@@ -38,7 +38,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
     align-items: center;
-
   }
 }
 
@@ -108,24 +107,16 @@ img {
   align-self: center;
   border: none;
   padding: 15px 32px;
-  font-size: 10px;
   color: black;
   text-decoration: none;
   display: inline-block;
   background-color: white;
   border: 1px solid black;
+  font-size: 10px;
 }
 
-.home-button {
-  align-self: center;
-  border: none;
-  padding: 15px 32px;
+.big-button {
   font-size: 15px;
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  background-color: white;
-  border: 1px solid black;
 }
 
 .container {
