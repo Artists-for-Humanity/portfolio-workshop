@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.content {
+  display: grid;
+  place-items: center;
+}
+
+body {
+  font-size: 30px;
+  background-color: rgb(202, 153, 96);
+  font-family: Times;
+  padding: 10%;
+}
+
+.background-explore {
+  background-color: rgb(243, 218, 195);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+@media screen and (min-width:600px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+  }
+}
+
+.bottom-txt {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  font-size: 25px
+}
+
+.top-txt {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  color: rgb(235, 205, 186);
+  font-family: Tahoma;
+}
+
+.mid-txt {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  color: black;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.image-text {
+  position: relative;
+}
+
+.contact {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px
+}
+
+.list {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  right: 10px;
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px
+}
+
+.contact-info {
+  position: relative;
+}
+
+.button {
+  align-self: center;
+  border: none;
+  padding: 15px 32px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+.big-button {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px;
+}
+
+.title {
+  text-align: center;
+  color: rgb(75, 39, 11);
+  font-size: 80px;
+  padding-bottom: 1px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

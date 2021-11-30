@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Website/Explore Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<header>
+  <h1 class="title">♥ Gallery ♥</h1>
+  <div class="container">
+    <a class="button big-button" href="/">Back Home</a>
+  </div>
+</header>
+
+<body class="background-explore">
+  <div class="box-2">
+    <div class="gallery">
+      {% for image in images %}
+      <img src="{{image.src}}" alt="{{image.alt}}" />
+      {% endfor %}
+    </div>
+</body>
+
+</html>
