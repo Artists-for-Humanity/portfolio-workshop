@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Your HTML starts here -->
+
+    {% with title="Portfolio" %}
+    {% include 'nav.html' %}
+    {% endwith %}
+    <main>
+        {% for item in items %}
+        <div class="item">
+            <p>{{item.text}}</p>
+            <img src="{{item.image}}" alt="" class="zoom" />
+        </div>
+        {% endfor %}
+    </main>
+    <br><br>
+    <footer>Copyright 2021</footer>
+    <!-- Your HTML ends here -->
+</body>
+
+</html>

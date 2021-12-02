@@ -1,0 +1,97 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #fff2c2;
+}
+
+.flaxbg {
+  background-color: #eedc82;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  font-family: Overpass;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+a {
+  font-size: 26px;
+  font-family: Georama;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px 40px 0px 40px;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.navlinkborder {
+  border-radius: 30px;
+  border-style: solid;
+  border-color: brown;
+  border-width: 10px;
+  padding: 8px 18px 8px 18px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+p {
+  font-size: 26px;
+  font-family: Georama;
+  text-align: center;
+}
+
+.item {
+  background-color: #fff2af;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-width: 20px;
+  border-style: solid;
+  border-color: brown;
+  border-radius: 70px;
+  padding: 4%;
+  display: flex;
+  justify-content: space-around;
+  gap: 55px;
+  align-items: center;
+}
+
+img {
+  width: 500x;
+  height: 395px;
+  border-width: 12px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.item+.item {
+  margin-top: 30px;
+}
+
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+  border-color: #91ba8f;
+}
+
+footer {
+  text-align: center;
+}
