@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .img {
   max-width: 100%;
   height: auto;
@@ -52,21 +57,41 @@
   border-style: solid;
   margin-left: 3%;
   margin-right: 3%;
+  border: 1px solid black;
+
 
 }
 
 .box-text {
   padding-left: 3%;
   padding-right: 3%;
+  background-color: rgb(70, 70, 70);
 }
 
 img {
   max-width: 150px;
 }
 
-body {
+.page_bg {
   font-family: "Comic Neue";
+  background: linear-gradient(rgba(82, 82, 82, 1) 0%,
+      coral,
+      rgba(82, 82, 82, 1) 100%);
+  background-size: 200% 200%;
+  animation: background-animation linear 15s infinite;
+  height: 100%;
 }
+
+@keyframes background-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% 200%;
+  }
+}
+
 
 .about-user {
   background-color: whitesmoke;
@@ -116,12 +141,18 @@ body {
   margin: 2%;
 }
 
-body {
-  background-color: rgb(70, 70, 70);
-}
-
 .line {
   border: 1px solid #cccc;
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.field_border {
+  margin: 3%;
+  padding: 0.44%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
 </head>
 
-
-<body>
+<body class="page_bg">
     {% for nav in nav %}
     {% include 'nav.html' %}
     {% endfor %}
 
-    </div>
-    </div>
 
     <div class="box-title">
         <div class="trending-edit">
@@ -29,6 +24,7 @@
         {% for box in content_box %}
         {% include 'homepage/box.html' %}
         {% endfor %}
+
     </div>
     </div>
     <div class="box-title ">
