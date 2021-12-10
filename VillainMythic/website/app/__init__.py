@@ -25,12 +25,6 @@ def create_app(test_config=None):
 
     from . import auth
     app.register_blueprint(auth.bp)
-
-    @app.route("/home")
-    def nav():
-        nav = [{"title": ""}]
-        content_box= [{"title": ""}, {"title": ""}, {"titles": ""}]
-        return render_template( "homepage/home.html", nav=nav, content_box=content_box)
     
     @app.route("/profile")
     def prof():
