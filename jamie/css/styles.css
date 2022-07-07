@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 20px;
+  background: gray;
+}
+
+.container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 10%;
+  background-color: white;
+  width: 8vw;
+  height: 90vh;
+  border-radius: 10px;
+}
+
+.feature{
+ width: 70vw;
+ border-radius: 10px;
+ margin-left: 20px;
+ margin-right: 20px;
+ text-align: center;
+}
+
+.sidebar{
+  height: 90vh;
+  width: 15vw;
+  opacity: 10%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nav-button {
+  margin-left: 10px;
+  background-color: black;
+  padding:10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-top:10px;
+}
+
